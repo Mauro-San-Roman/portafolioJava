@@ -10,7 +10,7 @@ fetch("https://api.github.com/users/Mauro-San-Roman")
     })
     .catch((error) => {
         // ADVERTENCIA POR SI EXISTE ALGUN ERROR
-        console.error("Error al cargar las categorias:", error);
+        console.error("Error al cargar la información:", error);
         alert("Hubo un error al cargar los datos. Revisa la consola.");
     });
 
@@ -34,7 +34,6 @@ const misProyectos = () => {
         .then(data => {
             contenedorProyectos.innerHTML = "";
             data.forEach(proyecto => {
-                // Creamos una columna para cada card
                 contenedorProyectos.innerHTML += `
                 <div class="col-md-6">
                     <div class="card h-100 shadow-sm border-0">
