@@ -50,7 +50,7 @@ const misProyectos = () => {
 
 const miComunidad = () => {
     const contenedorComunity = document.getElementById("contenedor-comunity");
-    fetch("https://api.github.com/users/Mauro-San-Roman/followers?per_page=8")
+    fetch("https://api.github.com/users/Mauro-San-Roman/followers?per_page=5")
         .then(res => res.json())
         .then(data => {
             contenedorComunity.innerHTML = "";
